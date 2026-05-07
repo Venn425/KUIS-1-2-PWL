@@ -58,7 +58,6 @@ exports.deletePeminjaman = async (req, res) => {
         const peminjaman = await Peminjaman.findById(req.params.id);
         if (!peminjaman) return res.status(404).json({ message: 'Tidak ditemukan' });
 
-        // Jika belum dikembalikan, tambah stok dulu
         if (peminjaman.is_return === false) {
             const buku = await Buku.findById(peminjaman.id_buku);
             if (buku) {
