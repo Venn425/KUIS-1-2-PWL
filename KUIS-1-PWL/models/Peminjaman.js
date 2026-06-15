@@ -16,7 +16,7 @@ const peminjamanSchema = new mongoose.Schema({
     },
     is_return: {
         type: Boolean,
-        required: true
+        default: false
     },
 },{timestamps: true});
 

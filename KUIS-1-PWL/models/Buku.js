@@ -16,7 +16,8 @@ const bukuSchema = new mongoose.Schema({
     stok: {
         type: Number,
         required: true
-    },},
+    }
+},
     { timestamps: true }   
 );
 
