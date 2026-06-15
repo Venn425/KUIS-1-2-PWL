@@ -60,7 +60,10 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <h1>IBIK Digital Library</h1>
+      <div className={styles.header}>
+        <img src="/logo.png" alt="Library" className={styles.libraryImage} />
+        <h1>IBIK Digital Library</h1>
+      </div>
       
       <div className={styles.bookList}>
         {bukuList.length === 0 ? (
